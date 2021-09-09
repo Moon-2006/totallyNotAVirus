@@ -27,5 +27,3 @@ function submitText () {
     document.getElementById("paragraph").innerHTML = newText;
     console.log("New text set to: ",newText);
 }
-
-window.location.href("index2.html")
