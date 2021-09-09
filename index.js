@@ -2,6 +2,15 @@
 var buttonToggle = true;
 var checkboxToggle = false;
 var newText = document.getElementById("textInput").value;
+var originTime = new Date().getTime();
+var loop = setInterval(function(){
+    var now = new Date().getTime();
+    var timeLeft = originTime-now;
+    var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000) + 12;
+    if(seconds >= 0){
+        document.getElementById("timer").innerHTML = seconds;
+    }
+}, 1000)
 
 
 //console
@@ -11,11 +20,7 @@ console.log(buttonToggle);
 
 //Functions 
 function onClick () {
-    if(checkbox.checked) {
-        console.log("Checked")
-    } else {
-        console.log("Not Checked")
-    }
+    console.log(Timer.getTime());
 }
 
 function toggle () {
