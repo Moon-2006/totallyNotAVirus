@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        Totally not malicoius
+        Why are you here?
     </head>
     <body style="background-color: gainsboro;" >
         
-        <p id="paragraph">Text</p>
+        <!-- Number quiz-->
         <p id="timer"></p>
-        <button onclick="onClick()" id="Button" type="button">Click me</button>
 
-        <br><br>
+        <!-- hidden sections-->
+        <section>
+            <!-- Toggle off on hideNums-->
+            <div id="textBox">
+                <input type="text">
+                <p id="numberSlot"></p>
+            </div>
 
+            <div id="showOnStart">
+                <p>Remember these numbers. Click the button when your ready.</p>
+            </div>
+
+            <div id="hideOnStart">
+                <button onclick="onClick()" id="Button" type="button">Start</button>
+            </div>
+
+            <div id="Hide on memorized">
+            </div>
+        </section>
+
+
+        <br>
+        <button  onclick="hideNums()">Click to hide numbers</button>
+
+        <br>
+        <p id="test">null</p>
+
+
+        <!-- text box-->
+        <p id="paragraph">Text</p>
         <input id="checkbox" onclick="toggle()" type="checkbox">
         <br>
         <input id="textInput" type="text">
